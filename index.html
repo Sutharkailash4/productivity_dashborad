@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Productivity Dashboard</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <h1>Productivity Dashboard</h1>
+            <button class="nav_btn">Change Theme</button>
+        </nav>
+    </header>
+    <div class="one">
+        <div class="weather_box">
+            <div class="weather_left_box">
+                <div class="time_box">
+                    <h2 class="upper"></h2>
+                    <h2 class="time"></h2>
+                </div>
+                <h3 class="city_name"></h3>
+            </div>
+            <div class="weather_right_box">
+                <div class="first_box">
+                    <h2></h2>
+                    <h3></h3>
+                </div>
+                <div class="sec_box">
+                    <p class="humidity"></p>
+                    <p class="sunrise"></p>
+                    <p class="sunset"></p>
+                    <p class="wind"></p>
+                </div>
+            </div>
+            <img src="https://media.istockphoto.com/id/898516978/photo/ripples-on-blue-water-surface.webp?a=1&b=1&s=612x612&w=0&k=20&c=v63sk3wnzieGYsUobCpadZ4fTRnp2kDplK465Jg5NV0="
+                alt="Image not found">
+        </div>
+        <main>
+            <section class="show">
+                <div class="todo_list_main_box list" id="0">
+                    <img src="https://images.unsplash.com/photo-1613828330596-982c62f72e9a?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8YmFja2dyb3VuZCUyMGltYWdlfGVufDB8fDB8fHww"
+                        alt="image not found">
+                    <h3>Todo List</h3>
+                </div>
+                <div class="daily_planer_main_box list" id="1">
+                    <img src="https://plus.unsplash.com/premium_photo-1676478746894-95d39780d573?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fGJhY2tncm91bmQlMjBpbWFnZXxlbnwwfHwwfHx8MA%3D%3D"
+                        alt="image not found">
+                    <h3>Daily Planner</h3>
+                </div>
+                <div class="motivation_main_box list" id="2">
+                    <img src="https://images.unsplash.com/photo-1537444532052-2afbf769b76c?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fG1vdGl2YXRpb258ZW58MHx8MHx8fDA%3D"
+                        alt="image not found">
+                    <h3>Motiavtion Quotes</h3>
+                </div>
+                <div class="pomodoro_timer_main_box list" id="3">
+                    <img src="https://media.istockphoto.com/id/1325525862/photo/clock-dispersing-in-hand.webp?a=1&b=1&s=612x612&w=0&k=20&c=Xzgb_N7-E4ykZ_9AzkE_yISYvpxo9PRdai8LZL-rxQ4="
+                        alt="image not found">
+                    <h3>Pomodoro Timer</h3>
+                </div>
+                <div class="daily_goals_main_box list" id="4">
+                    <img src="https://plus.unsplash.com/premium_photo-1682309772037-8da49abb2b84?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8Z29hbHN8ZW58MHx8MHx8fDA%3D"
+                        alt="image not found">
+                    <h3>Daily Goals</h3>
+                </div>
+            </section>
+        </main>
+    </div>
+    <section class="todo_section hide">
+        <div class="task_header_box">
+            <h2>Your Personalised Task List</h2>
+            <button class="back_btn" id="0">Close</button>
+        </div>
+        <div class="todo_main_box">
+            <div class="todo_input_box">
+                <input type="text" class="todo_input" placeholder="Enter Task">
+                <textarea name="name" id="textarea" placeholder="Enter Detail"></textarea>
+                <div class="check_box">
+                    <input type="checkbox" id="check" name="checkbox">
+                    <label for="check" class="checkbox_para">Mark as Important!</label>
+                </div>
+                <button class="add_btn">
+                    Add Task
+                </button>
+            </div>
+            <div class="todo_output">
+            </div>
+        </div>
+        </div>
+    </section>
+    <section class="daily_planner_section hide">
+        <div class="task_header_box">
+            <h2>Plan Your day</h2>
+            <button class="back_btn" id="1">Close</button>
+        </div>
+        <div class="daily_planner_main_box">
+        </div>
+    </section>
+    <section class="motivation_section hide">
+        <div class="task_header_box">
+            <h2>Motivation Quotes</h2>
+            <button class="back_btn" id="2">Close</button>
+        </div>
+        <div class="motivation_big_box">
+            <div class="motivation_box">
+                <h2 class="quote">
+                </h2>
+                <button class="quote_of_the_day">
+                    Quote of the Day
+                </button>
+                <button class="author_name_box">
+
+                </button>
+            </div>
+            <button class="change_quote">
+                Change Quote
+            </button>
+        </div>
+    </section>
+    <section class="pomodoro_section hide">
+        <div class="task_header_box">
+            <h2>Pomodoro Timer</h2>
+            <button class="back_btn" id="3">Close</button>
+        </div>
+        <div class="pomo_main_box">
+            <div class="pomo_time_box">
+                <h2 class="minutes"></h2>
+                <h2 class="seconds"></h2>
+            </div>
+            <div class="pomo_btns_box">
+                <button class="start_btn">Start</button>
+                <button class="stop_btn">Stop</button>
+                <button class="reset_btn">Reset</button>
+            </div>
+        </div>
+    </section>
+    <section class="goals_section hide">
+        <div class="task_header_box">
+            <h2>Daily Goals</h2>
+            <button class="back_btn" id="4">Close</button>
+        </div>
+
+        <div class="goals_main_box">
+            <div class="goals_input_box">
+                <input type="text" class="goal_input" placeholder="Enter your goal">
+                <button class="add_goal_btn">Add Goal</button>
+            </div>
+
+            <div class="goals_output_box">
+            </div>
+        </div>
+
+    </section>
+    <script src="script.js"></script>
+</body>
+
+</html>
