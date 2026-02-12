@@ -555,3 +555,143 @@ span {
     color: white;
 }
 
+@media (max-width: 1024px) {
+
+    .weather_left_box,
+    .weather_right_box {
+        width: 100%;
+        position: relative;
+    }
+
+    .weather_box {
+        height: auto;
+    }
+
+    .show {
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: center;
+    }
+
+    main section div {
+        width: 45%;
+        height: 260px;
+    }
+
+    .todo_main_box {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .todo_output {
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+
+    nav h1 {
+        font-size: 20px;
+    }
+
+    nav button {
+        font-size: 14px;
+        padding: 6px 12px;
+    }
+
+    .weather_left_box,
+    .weather_right_box {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .first_box h2 {
+        font-size: 30px;
+    }
+
+    .first_box h3 {
+        font-size: 20px;
+    }
+
+    .time_box .time {
+        font-size: 30px;
+    }
+
+    .city_name {
+        font-size: 20px;
+    }
+
+    .show {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    main section div {
+        width: 100%;
+        height: 220px;
+    }
+
+    .task_header_box h2 {
+        font-size: 26px;
+    }
+
+    .todo_input_box {
+        width: 100%;
+        height: auto;
+    }
+
+    .todo_output {
+        height: auto;
+        max-height: 300px;
+    }
+
+    .daily_planner_box {
+        width: 100%;
+    }
+
+    .motivation_big_box .motivation_box {
+        width: 90%;
+    }
+
+    .pomo_main_box {
+        width: 90%;
+        margin-top: 40px;
+    }
+
+    .pomo_time_box h2 {
+        font-size: 50px;
+    }
+
+    .goals_main_box {
+        width: 100%;
+        padding: 10px;
+    }
+}
+@media (max-width: 480px) {
+
+    button {
+        font-size: 16px;
+        padding: 8px 14px;
+    }
+
+    .task_header_box {
+        flex-direction: column;
+        gap: 10px;
+        align-items: flex-start;
+    }
+
+    .task_header_box h2 {
+        font-size: 22px;
+    }
+
+    .goal_item {
+        flex-direction: column;
+        gap: 10px;
+        align-items: flex-start;
+    }
+
+    .goal_buttons {
+        width: 100%;
+        justify-content: space-between;
+    }
+}
